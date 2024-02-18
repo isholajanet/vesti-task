@@ -9,6 +9,7 @@ Authentication:
   Method: POST
   URL: /auth/signup
   Request Body:
+  
     {
       "firstname": "Tayo",
       "lastname": "Tiii",
@@ -18,7 +19,6 @@ Authentication:
       "password": "tiii12",
       "address": "ketu, Lagos",
       "state": "Lagos"
-
     }
 
 **  Response:
