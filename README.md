@@ -1,7 +1,7 @@
-API DOCUMENTATION
+# API DOCUMENTATION
 
-MODELS:
-Customer, Product, Transaction, Orders 
+## MODELS:
+  Customer, Product, Transaction, Orders 
 
 ## Endpoints
 Authentication:
@@ -25,74 +25,74 @@ Authentication:
     HTTP Status: 201 Created
     Body:    
 
-      {
-        "message": "User registered successfully",
-        "token": "eyJhbGciOiJnCJ9..."
-      }
+        {
+          "message": "User registered successfully",
+          "token": "eyJhbGciOiJnCJ9..."
+        }
 
-### Login
-Description: Endpoint for user login.
-Method: POST
-URL: /auth/login
-Request Body:
+#### Login
+      Description: Endpoint for user login.
+      Method: POST
+      URL: /auth/login
+      Request Body:
 
-  {
-    "email": "user@example.com",
-    "password": "password123"
-  }
+        {
+          "email": "user@example.com",
+          "password": "password123"
+        }
 
 ### Response:
-HTTP Status: 200 OK
+    HTTP Status: 200 OK
 
-Body:
+    Body:
 
-  {
-    "message": "User logged in successfully",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-  }
+      {
+        "message": "User logged in successfully",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+      }
 
-API Documentation
-Endpoints
-Authentication
-Signup
-Description: Endpoint for user registration.
-Method: POST
-URL: /auth/signup
-Request Body:
+#### API Documentation
+      Endpoints
+      Authentication
+      Signup
+      Description: Endpoint for user registration.
+      Method: POST
+      URL: /auth/signup
+      Request Body:
 
-{
-  "email": "user@example.com",
-  "password": "password123"
-}
+          {
+            "email": "user@example.com",
+            "password": "password123"
+          }
 
-Response:
-HTTP Status: 201 Created
-Body:
+#### Response:
+      HTTP Status: 201 Created
+      Body:
 
-{
-  "message": "User registered successfully",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-}
+        {
+          "message": "User registered successfully",
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        }
 
-Login
-Description: Endpoint for user login.
-Method: POST
-URL: /auth/login
-Request Body:
-json
-Copy code
-{
-  "email": "user@example.com",
-  "password": "password123"
-}
-Response:
-HTTP Status: 200 OK
-Body:
+#### Login
+        Description: Endpoint for user login.
+        Method: POST
+        URL: /auth/login
+        Request Body:
 
-{
-  "message": "User logged in successfully",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-}
+            {
+              "email": "user@example.com",
+              "password": "password123"
+            }
+
+#### Response:
+        HTTP Status: 200 OK
+        Body:
+
+          {
+            "message": "User logged in successfully",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+          }
 
 ## Configuration Settings
 # Environment Variables
@@ -142,11 +142,6 @@ $ npm run start:prod
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
