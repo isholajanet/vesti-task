@@ -9,7 +9,7 @@ Authentication:
   Method: POST
   URL: /auth/signup
   Request Body:
-  
+
     {
       "firstname": "Tayo",
       "lastname": "Tiii",
@@ -21,25 +21,31 @@ Authentication:
       "state": "Lagos"
     }
 
-**  Response:
+###  Response:
     HTTP Status: 201 Created
     Body:    
+
       {
         "message": "User registered successfully",
         "token": "eyJhbGciOiJnCJ9..."
       }
-Login
+
+### Login
 Description: Endpoint for user login.
 Method: POST
 URL: /auth/login
 Request Body:
+
   {
     "email": "user@example.com",
     "password": "password123"
   }
-Response:
+
+### Response:
 HTTP Status: 200 OK
+
 Body:
+
   {
     "message": "User logged in successfully",
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
@@ -53,21 +59,21 @@ Description: Endpoint for user registration.
 Method: POST
 URL: /auth/signup
 Request Body:
-json
-Copy code
+
 {
   "email": "user@example.com",
   "password": "password123"
 }
+
 Response:
 HTTP Status: 201 Created
 Body:
-json
-Copy code
+
 {
   "message": "User registered successfully",
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
+
 Login
 Description: Endpoint for user login.
 Method: POST
@@ -82,12 +88,12 @@ Copy code
 Response:
 HTTP Status: 200 OK
 Body:
-json
-Copy code
+
 {
   "message": "User logged in successfully",
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
+
 ## Configuration Settings
 # Environment Variables
 DB_HOST: Hostname of the database server.
